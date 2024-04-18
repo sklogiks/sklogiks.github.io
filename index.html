@@ -1,64 +1,572 @@
+
 <!DOCTYPE html>
 <html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sumit Kumar - Control Engineer</title>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; color: #333; }
-        header, section { margin-bottom: 20px; }
-        h1, h2 { color: #0056b3; }
-        ul { list-style-type: none; padding: 0; }
-        li { margin-bottom: 10px; }
-        a { color: #0056b3; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .container { width: 80%; margin: auto; }
-        img { max-width: 100%; height: auto; border-radius: 10px; }
-        footer { text-align: center; margin-top: 20px; font-size: 0.8em; color: #666; }
-    </style>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title> ICAR </title>
+   <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
+   <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
+   <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
+   <link rel="stylesheet" href="assets/vendors/swiper/swiper.min.css" />
+   <link rel="stylesheet" href="assets/css/style.css" />
+   <link rel="stylesheet" href="assets/css/style-responsive.css" />
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <h1>Sumit Kumar</h1>
-            <p>Control Engineer</p>
-        </header>
+   <div class="page-wrapper">
+        <header class="main-header">
+         <div class="main-header__wrapper">
+            <div class="main-header__wrapper-inner">
+               <div class="main-header__logo"> <a href="index.html"><img src="assets/images/NePPA-logo.png" alt=""></a>
+               </div>
+               <div class="main-header__menu-box">
+                  <div class="main-header__menu-box-bottom">
+                     <nav class="main-menu">
+                        <div class="main-menu__wrapper">
+                           <div class="main-menu__wrapper-inner">
+                              <div class="main-menu__left">
+                                 <div class="main-menu__main-menu-box">
+                                    <a href="#" class="mobile-nav__toggler"><img src="assets/images/menu-bar.png"
+                                          alt=""></a>
+                                    <ul class="main-menu__list">
+                                       <li> <a href="index.html">Home </a> </li>
+                                       <li class="dropdown">
+                                          <a href="#">About Us</a>
+                                          <ul class="shadow-box">
+                                             <li><a href="project-details.html">Project Details</a></li>
+                                             <li><a href="project-team.html">Project Team</a></li>
+                                          </ul>
+                                       </li>
+                                       <li class="dropdown">
+                                          <a href="#">Track Commodity</a>
+                                          <ul class="shadow-box">
+                                             <li><a href="track-banana.html">Track Banana</a> </li>
+                                          </ul>
+                                       </li>
+                                       <li class="dropdown">
+                                          <a href="#">Registration</a>
+                                          <ul class="shadow-box">
+                                             <li><a href="farmer.html">Farmer</a> </li>
+                                             <li><a href="storage-facility.html">Storage Facility</a> </li>
+                                             <li><a href="transport-facility.html">Transport Facility</a> </li>
+                                          </ul>
+                                       </li>
+                                       <li class="dropdown">
+                                          <a href="#">Data</a>
+                                          <ul class="shadow-box">
+                                             <li><a href="farmer-data.html">Farmer Data</a> </li>
+                                             <li><a href="storage-data.html">Storage Data</a> </li>
+                                             <li><a href="transport-data.html">Transport Data</a> </li>
+                                             <li><a href="sensor_info.html">Sensor Data 1</a> </li>
+                                             <li><a href="sensor_info.html">Sensor Data 2</a> </li>
+                                          </ul>
+                                       </li>
+                                       <li> <a href="contast-us.html">Contact Us </a> </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+               <div class="main-header__menu-box">
+                  <div class="main-header__menu-box-bottom">
+                     <nav class="main-menu">
+                        <div class="main-menu__wrapper">
+                           <div class="main-menu__wrapper-inner">
+                              <div class="main-menu__mid">
+                                 <img src="assets/images/azadi_logo.png" alt="">
+                                 <img src="assets/images/swach-bharat.png" alt="">
+                                 <img src="assets/images/G20.jpg" alt="">
+                              </div>
+                           </div>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
 
-        <section>
-            <h2>About Me</h2>
-            <img src="sumit.jpg" alt="Sumit Kumar">
-            <p>I am Sumit Kumar, a dedicated Control Engineer with over 4 years of experience specializing in [Area of Expertise]. I am passionate about developing automated systems and improving manufacturing processes through innovative control solutions.</p>
-        </section>
+      <div class="mobile-nav__wrapper">
+         <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+         <!-- /.mobile-nav__overlay -->
+         <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+            <div class="logo-box">
+               <a href="index.html" aria-label="logo image"><img src="assets/images/m-NePPA-logo.png" width="122"
+                     alt=""></a>
+            </div>
 
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>System Automation</li>
-                <li>Process Control</li>
-                <li>PLC Programming</li>
-                <li>SCADA Systems</li>
-                <li>Robotics</li>
+            <div class="mobile-nav__container">
+               <ul class="main-menu__list">
+                  <li> <a href="index.html">Home </a> </li>
+                  <li class="dropdown">
+                     <a href="#">About Us</a>
+                     <ul class="shadow-box">
+                        <li><a href="project-details.html">Project Details</a></li>
+                        <li><a href="project-team.html">Project Team</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#">Track Commodity</a>
+                     <ul class="shadow-box">
+                        <li><a href="track-banana.html">Track Banana</a> </li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#">Registration</a>
+                     <ul class="shadow-box">
+                        <li><a href="farmer.html">Farmer</a> </li>
+                        <li><a href="storage-facility.html">Storage Facility</a> </li>
+                        <li><a href="transport-facility.html">Transport Facility</a> </li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#">Data</a>
+                     <ul class="shadow-box">
+                        <li><a href="farmer-data.html">Farmer Data</a> </li>
+                        <li><a href="storage-data.html">Storage Data</a> </li>
+                        <li><a href="transport-data.html">Transport Data</a> </li>
+                        <li><a href="sensor_info.html">Sensor Data 1</a> </li>
+                        <li><a href="sensor_info.html">Sensor Data 2</a> </li>
+                     </ul>
+                  </li>
+                  <li> <a href="contast-us.html">Contact Us </a> </li>
+               </ul>
+            </div>
+            <ul class="mobile-nav__contact list-unstyled">
+               <li>
+                  <i class="fa fa-envelope"></i>
+                  <a href="mailto:director.ciphet@icar.gov.in">director.ciphet@icar.gov.in</a>
+               </li>
+               <li>
+                  <i class="fa fa-phone-alt"></i>
+                  <a href="tel:(0161) 2313103">(0161) 2313103</a>
+               </li>
             </ul>
-        </section>
 
-        <section>
-            <h2>Projects</h2>
-            <ul>
-                <li><strong>Project Title 1:</strong> Description of what the project entailed and the technologies used.</li>
-                <li><strong>Project Title 2:</strong> Description of another project, its impact, and your role in the project.</li>
-                <!-- Add more projects as needed -->
+         </div>
+      </div>
+
+      <div class="mobile-nav__wrapper">
+         <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+         <!-- /.mobile-nav__overlay -->
+         <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+            <div class="logo-box">
+               <a href="index.html" aria-label="logo image"><img src="assets/images/m-NePPA-logo.png" width="122"
+                     alt=""></a>
+            </div>
+
+            <div class="mobile-nav__container">
+               <ul class="main-menu__list">
+                  <li> <a href="index.html">Home </a> </li>
+                  <li class="dropdown">
+                     <a href="#">About Us</a>
+                     <ul class="shadow-box">
+                        <li><a href="project-details.html">Project Details</a></li>
+                        <li><a href="project-team.html">Project Team</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#">Track Commodity</a>
+                     <ul class="shadow-box">
+                        <li><a href="track-banana.html">Track Banana</a> </li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#">Registration</a>
+                     <ul class="shadow-box">
+                        <li><a href="farmer.html">Farmer</a> </li>
+                        <li><a href="storage-facility.html">Storage Facility</a> </li>
+                        <li><a href="transport-facility.html">Transport Facility</a> </li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#">Data</a>
+                     <ul class="shadow-box">
+                        <li><a href="farmer-data.html">Farmer Data</a> </li>
+                        <li><a href="storage-data.html">Storage Data</a> </li>
+                        <li><a href="transport-data.html">Transport Data</a> </li>
+                        <li><a href="sensor_info.html">Sensor Data 1</a> </li>
+                        <li><a href="sensor_info.html">Sensor Data 2</a> </li>
+                     </ul>
+                  </li>
+                  <li> <a href="contast-us.html">Contact Us </a> </li>
+               </ul>
+            </div>
+            <ul class="mobile-nav__contact list-unstyled">
+               <li>
+                  <i class="fa fa-envelope"></i>
+                  <a href="mailto:director.ciphet@icar.gov.in">director.ciphet@icar.gov.in</a>
+               </li>
+               <li>
+                  <i class="fa fa-phone-alt"></i>
+                  <a href="tel:(0161) 2313103">(0161) 2313103</a>
+               </li>
             </ul>
-        </section>
 
-        <section>
-            <h2>Contact</h2>
-            <p>Email: <a href="sumitrastic@gmail.com">sumitrastic@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">yourprofile</a></p>
-        </section>
+         </div>
+      </div>
 
-        <footer>
-            <p>© 2024 Sumit Kumar</p>
-        </footer>
-    </div>
+
+      <section class="main-slider clearfix">
+         <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
+               "effect": "fade",
+               "pagination": {
+               "el": "#main-slider-pagination",
+               "type": "bullets",
+               "clickable": true
+               },
+               "navigation": {
+               "nextEl": "#main-slider__swiper-button-next",
+               "prevEl": "#main-slider__swiper-button-prev"
+               },
+               "autoplay": {
+               "delay": 5000
+               }}'>
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                  <div class="image-layer" style="background-image: url(assets/images/banner-bg-1.jpg);"></div>
+
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-xl-12">
+                           <div class="main-slider__content">
+                              <p class="main-slider__sub-title">Professional & Secure</p>
+                              <h2 class="main-slider__title"> Transportation</h2>
+
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="image-layer" style="background-image: url(assets/images/banner-bg-2.jpg);"></div>
+
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-xl-12">
+                           <div class="main-slider__content">
+                              <p class="main-slider__sub-title">We are Producing Natural Products</p>
+                              <h2 class="main-slider__title">Agriculture</h2>
+
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="image-layer" style="background-image: url(assets/images/banner-bg-3.jpg);"></div>
+
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-xl-12">
+                           <div class="main-slider__content">
+                              <p class="main-slider__sub-title">Warehousing & supply chain solutions</p>
+                              <h2 class="main-slider__title">Warehouse</h2>
+
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="swiper-pagination" id="main-slider-pagination"></div>
+         </div>
+      </section>
+
+      <section class="feature-one feature_one_box">
+         <div class="container-fulid">
+            <div class="row">
+
+               <div class="col-xl-3 col-lg-3 col-md-3">
+                  <div class="feature-one__single">
+                     <div class="feature-one__icon">
+                        <span class="icon-farm"><img src="assets/images/banner-icon-1st.png" alt=""></span>
+                     </div>
+                     <div class="feature-one__content">
+                        <h3 class="feature-one__title">Transparency Builds  <br> Trust</h3>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-xl-3 col-lg-3 col-md-3">
+                  <div class="feature-one__single">
+                     <div class="feature-one__icon">
+                        <span class="icon-farm"><img src="assets/images/banner-icon-2nd.png" alt=""></span>
+                     </div>
+                     <div class="feature-one__content">
+                        <h3 class="feature-one__title">Quality Control For <br> Exports</h3>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-xl-3 col-lg-3 col-md-3">
+                  <div class="feature-one__single">
+                     <div class="feature-one__icon">
+                        <span class="icon-farm"><img src="assets/images/banner-icon-3ed.png" alt=""></span>
+                     </div>
+                     <div class="feature-one__content">
+                        <h3 class="feature-one__title">GPS Location <br> Tracking</h3>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-xl-3 col-lg-3 col-md-3">
+                  <div class="feature-one__single">
+                     <div class="feature-one__icon">
+                        <span class="icon-farm"><img src="assets/images/banner-icon-4th.png" alt=""></span>
+                     </div>
+                     <div class="feature-one__content">
+                        <h3 class="feature-one__title">Ethylene Level <br> Detetion</h3>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </section>
+
+      <section class="about-one">
+         <div class="about-one-shape-1 float-bob-x">
+            <img src="assets/images/shapes/about-one-shape-1.png" alt="">
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-6">
+                  <div class="about-one__left">
+                     <div class="section-title text-left">
+                        <span class="section-title__tagline">About Us</span>
+                        <h2 class="section-title__title">ICAR- Network Program on Precision Agriculture</h2>
+                        <div class="section-title__icon">
+                           <img src="assets/images/icon/section-title-icon-1.png" alt="">
+                        </div>
+                     </div>
+                     <p class="about-one__text-1">ICAR had launched ICAR- </p>
+                     <p class="about-one__text-2">Network Program on Precision Agriculture (NePPA) on September 24,
+                        2021. The network program is developed initially involving 16 partner Institutes (covering 7
+                        SMDs) with IARI as lead. </p>
+                     <ul class="list-unstyled about-one__points">
+                        <li>
+                           <div class="icon">
+                              <span class="icon-tick"></span>
+                           </div>
+                           <div class="text">
+                              <p>Passionate growers cultivating quality sustainably.</p>
+                           </div>
+                        </li>
+                     </ul>
+                     <div class="about-one__btn-and-ceo">
+                        <div class="about-one__btn-box">
+                           <a href="javascript:void(0);" class="thm-btn about-one__btn">About More </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-6">
+                  <div class="about-one__right">
+                     <div class="about-one__img-box wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms">
+                        <div class="about-one__img-one">
+                           <img src="assets/images/about-one-img-1.jpg" alt="">
+                        </div>
+                        <div class="about-one__img-two">
+                           <img src="assets/images/about-one-img-2.jpg" alt="" class="img_full">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="unbeatable-one">
+         <div class="unbeatable-one__bg  jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%"
+            style="background-image: url(assets/images/backgrounds/unbeatable-one-bg.jpg);"></div>
+         <div class="container">
+            <div class="unbeatable-one__inner text-center">
+               <div class="unbeatable-one__content">
+                  <div class="unbeatable-one__shape-one wow slideInLeft" data-wow-delay="100ms"
+                     data-wow-duration="2500ms">
+                     <img src="assets/images/shapes/unbeatable-shape-1.png" alt="" class="float-bob-y">
+                  </div>
+                  <div class="unbeatable-one__shape-two wow slideInRight" data-wow-delay="100ms"
+                     data-wow-duration="2500ms">
+                     <img src="assets/images/shapes/unbeatable-shape-2.png" alt="" class="float-bob-y">
+                  </div>
+                  <h3 class="unbeatable-one__title">Traceability Tracking products from start to finish for transparency
+                     and accountability.
+                  </h3>
+
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="healthy-food-one">
+         <!-- <div class="healthy-food-one__bg float-bob-x bg_img_style"
+            style="background-image: url(assets/images/shapes/healthy-food-one-shape-1.png);"></div> -->
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-6">
+                  <div class="healthy-food-one__left">
+                     <div class="healthy-food-one__img">
+                        <img src="assets/images/healthy-food-one-1.jpg" alt="">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-6">
+                  <div class="healthy-food-one__right">
+                     <div class="section-title text-left">
+                        <!-- <span class="section-title__tagline">Traceability </span> -->
+                        <h2 class="section-title__title">Traceability </h2>
+                        <div class="section-title__icon">
+                           <img src="assets/images/icon/section-title-icon-1.png" alt="">
+                        </div>
+                     </div>
+                     <p class="mt-2"> In  food processing , fresh produce processing), the term traceability refers to the recording through means of barcodes or RFID tags and other tracking media, all movement of product and steps within the production process. One of the key reasons this is such a critical point is in instances where an issue of contamination arises, and a recall is required. Where traceability has been closely adhered to, it is possible to identify, by precise date/time and exact location which goods must be recalled, and which are safe, potentially saving millions of dollars in the recall process. Traceability within the food processing industry is also utilised to identify key high production and quality areas of a business, versus those of low return, and where points in the production process may be improved.</p>
+
+                     <p class="mt-4">In food processing software, traceability systems imply the use of a unique piece of data (e.g., order date/time or a serialized sequence number, generally through the use of a barcode / RFID which can be traced through the entire production flow, linking all sections of the business, including suppliers and future sales through the supply chain. Messages and files at any point in the system can then be audited for correctness and completeness, using the traceability software to find the particular transaction and/or product within the supply chain.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="services-one team-box">
+         <div class="services-one__bg" style="background-image: url(assets/images/shapes/services-one-shape-1.png);">
+         </div>
+         <div class="container">
+            <div class="section-title text-center">
+               <span class="section-title__tagline">Team</span>
+               <h2 class="section-title__title">OUR PROJECT TEAM</h2>
+               <div class="section-title__icon">
+                  <img src="assets/images/icon/section-title-icon-1.png" alt="">
+               </div>
+            </div>
+            <div class="row justify-content-center">
+
+               <div class="col-xl-4 col-lg-4 col-md-4 wow fadeInLeft animated" data-wow-delay="100ms"
+                  style="visibility: visible; animation-delay: 100ms; animation-name: fadeInLeft;">
+                  <div class="services-one__single">
+                     <div class="services-one__img-box">
+                        <div class="services-one__img">
+                           <img src="assets/images/dr-nachiket.jpg" alt="">
+                        </div>
+                     </div>
+                     <div class="services-one__content">
+                        <h3 class="services-one__title">Dr. Nachiket Kotwaliwale</h3>
+                        <p><strong>Director ICAR-CIPHET</strong></p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 wow fadeInLeft animated" data-wow-delay="200ms"
+                  style="visibility: visible; animation-delay: 200ms; animation-name: fadeInLeft;">
+                  <div class="services-one__single">
+                     <div class="services-one__img-box">
+                        <div class="services-one__img">
+                           <img src="assets/images/DrLK.jpg" alt="">
+                        </div>
+                     </div>
+                     <div class="services-one__content">
+                        <h3 class="services-one__title">Dr. Leena Kumari</h3>
+                        <p><strong>PI, NePPA Project</strong></p>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </section>
+
+      <footer class="site-footer">
+         <div class="site-footer__top">
+            <div class="container">
+               <div class="site-footer__top-inner">
+                  <div class="site-footer-shape-1 float-bob-x"
+                     style="background-image: url(assets/images/shapes/site-footer-shape-1.png);"></div>
+                  <div class="row">
+                     <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="footer-widget__column footer-widget__about">
+                           <div class="footer-widget__logo">
+                              <a href="index.html"><img src="assets/images/m-NePPA-logo.png" alt=""></a>
+                           </div>
+                           <div class="footer-widget__about-text-box">
+                              <p class="footer-widget__about-text">Welcome to ICAR- <br> Network Program on Precision
+                                 Agriculture (NePPA) </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                        <div class="footer-widget__column footer-widget__Explore">
+                           <div class="footer-widget__title-box">
+                              <h3 class="footer-widget__title">Useful Links</h3>
+                           </div>
+                           <ul class="footer-widget__Explore-list list-unstyled">
+                              <li><a href="about.html">About This Website</a></li>
+                              <li><a href="terms-and-conditions.html">Terms And Conditions </a></li>
+                              <li><a href="accessibility-statement.html">Accessibility Statement </a></li>
+                              <li><a href="feedback.html"> Feedback </a></li>
+                              <li><a href="contast-us.html">Contact Us</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                        <div class="footer-widget__column footer-widget__Contact">
+                           <div class="footer-widget__title-box">
+                              <h3 class="footer-widget__title">Contact Us</h3>
+                           </div>
+                           <ul class="footer-widget__Contact-list list-unstyled">
+                              <li>
+                                 <div class="text">
+                                    <p><a href="tel:(0161) 2313103"><strong>Phone No. :-</strong> +(0161) 2313103</a>
+                                    </p>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="text">
+                                    <p><a href="director.ciphet@icar.gov.in"><strong>Email :-</strong>
+                                          director.ciphet@icar.gov.in</a></p>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="text">
+                                    <p><strong>Address :-</strong> Near Radha Swami Satsang Ghar, Partap Singh Wala,
+                                       Ludhiana -141008</p>
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="site-footer__bottom">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-12">
+                     <div class="site-footer__bottom-inner">
+                        <p class="site-footer__bottom-text ">© Copyright 2024 by <a href="#">NePPA</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+   </div>
+
+   <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+   <script src="assets/vendors/swiper/swiper.min.js"></script>
+   <script src="assets/vendors/wow/wow.js"></script>
+   <script src="assets/vendors/timepicker/timePicker.js"></script>
+   <script src="assets/js/agrion.js"></script>
 </body>
+
 </html>
