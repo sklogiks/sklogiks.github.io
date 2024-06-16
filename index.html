@@ -3,51 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <!-- Link to your CSS file -->
-    <link rel="stylesheet" href="styles.css">
+    <title>Profile Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        #about, #skills, #projects, #contact {
+            padding: 20px 0;
+        }
+        h2 {
+            text-align: center;
+            margin: 20px 0;
+            color: #333;
+        }
+        .profile-img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .skills-list, .projects-list {
+            list-style: none;
+            padding: 0;
+        }
+        .skills-list li, .projects-list li {
+            background: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .contact-info {
+            text-align: center;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <!-- Navigation, Social links, etc. -->
+        <h1>Your Name</h1>
+        <p>Web Developer | Designer | Programmer</p>
     </header>
-
-    <aside>
-        <!-- Sidebar with profile and links -->
-    </aside>
-
-    <main>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+            <p>Hi, I'm [Your Name], a passionate web developer with experience in creating dynamic and responsive websites. I love coding, designing, and learning new technologies.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+            </ul>
+        </section>
         <section id="projects">
             <h2>Projects</h2>
-            <!-- Project items -->
-            <article class="project">
-                <h3>Project Title</h3>
-                <!-- Project details -->
-            </article>
-            <!-- Repeat for other projects -->
+            <ul class="projects-list">
+                <li>
+                    <h3>Project One</h3>
+                    <p>Description of the project.</p>
+                    <a href="https://github.com/yourusername/project-one">GitHub Repo</a>
+                </li>
+                <li>
+                    <h3>Project Two</h3>
+                    <p>Description of the project.</p>
+                    <a href="https://github.com/yourusername/project-two">GitHub Repo</a>
+                </li>
+            </ul>
         </section>
-
-        <section id="skills">
-            <h2>What I know</h2>
-            <div class="skill-category">
-                <h3>Frontend</h3>
-                <!-- Frontend skills -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p>Email: youremail@example.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">Your LinkedIn</a></p>
             </div>
-            <div class="skill-category">
-                <h3>Backend</h3>
-                <!-- Backend skills -->
-            </div>
-            <!-- Repeat for other skill categories -->
         </section>
-        
-        <!-- Add more sections as needed -->
-    </main>
-
-    <footer>
-        <!-- Footer content -->
-    </footer>
-
-    <!-- Link to your JavaScript file -->
-    <script src="script.js"></script>
+    </div>
 </body>
 </html>
