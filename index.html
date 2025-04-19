@@ -3,108 +3,373 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        #about, #skills, #projects, #contact {
-            padding: 20px 0;
-        }
-        h2 {
-            text-align: center;
-            margin: 20px 0;
-            color: #333;
-        }
-        .profile-img {
-            display: block;
-            margin: 20px auto;
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-        }
-        .skills-list, .projects-list {
-            list-style: none;
-            padding: 0;
-        }
-        .skills-list li, .projects-list li {
-            background: #fff;
-            margin: 10px 0;
-            padding: 10px;
-            border: 1px solid #ddd;
-        }
-        .contact-info {
-            text-align: center;
-        }
-        .contact-info p {
-            margin: 5px 0;
-        }
-    </style>
+    <title>Sumit Kumar - Technology Consultant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Er. SUMIT KUMAR</h1>
-        <p>Control Engineer | Automation | IoT Expert</p>
-    </header>
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <img src="sumit.jpg" alt="Profile Picture" class="profile-img">
-            <p>Hi, I'm Sumit Kumar, a dedicated control engineer with expertise in PLC, SCADA, robotics, Arduino, IoT, sensors, and ESP32. I thrive on developing innovative automation solutions to optimize industrial processes and enhance system efficiency.</p>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-               <li>PLC Programming</li>
-                <li>SCADA Systems</li>
-                <li>Robotics</li>
-                <li>Arduino</li>
-                <li>IoT</li>
-                <li>Sensors</li>
-                <li>ESP32</li>
+        <nav>
+            <div class="logo">SK</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#training">Training</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul class="projects-list">
-                <li>
-                    <h3>Project One</h3>
-                    <p>Description of the project.</p>
-                    <a href="https://github.com/yourusername/project-one">GitHub Repo</a>
-                </li>
-                <li>
-                    <h3>Project Two</h3>
-                    <p>Description of the project.</p>
-                    <a href="https://github.com/yourusername/project-two">GitHub Repo</a>
-                </li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact me at</h2>
-            <div class="contact-info">
-                <p>Email: sklogiks@gmail.com</p>
-                <p>Phone: +91-8219498325</p>
-                <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">Your LinkedIn</a></p>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
-        </section>
-    </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Sumit Kumar</h1>
+            <h2>Technology Consultant - AI, Robotics, and Automation</h2>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn primary">Contact Me</a>
+                <a href="#experience" class="btn secondary">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a Technology Consultant specializing in AI, Robotics, and Automation with experience in developing innovative solutions for agricultural technology and industrial automation. With a strong background in electrical engineering and a passion for applying cutting-edge technology to solve real-world problems, I strive to create systems that enhance efficiency and productivity.</p>
+                    <p>My career objective is to join an organization with professional ethics and values where I can learn and utilize my knowledge and energy to develop both the organization and myself.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> sumitrastic@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> 7837374687</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Chintpurni Distt. Una, H.P 177110</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">July 2024 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Technology Consultant – AI, Robotics, and Automation</h3>
+                        <p>Collaborating with Punjab Agricultural University on applied AI and embedded system projects in post-harvest technology.</p>
+                        <ul class="timeline-details">
+                            <li>Developed a device for early detection of insect infestation in grain storage containers using computer vision and sensors</li>
+                            <li>Built a honey adulteration inspection system using image analysis and custom hardware integration</li>
+                            <li>Worked on spectral imaging-based estimation of fruit and vegetable shelf life using K-Nearest Neighbors (KNN) algorithm</li>
+                            <li>Designed a controlled chamber for monitoring and predicting fruit shelf life with environmental parameter tracking</li>
+                        </ul>
+                        <h4>Completed Projects in Individual Capacity:</h4>
+                        <ul class="timeline-details">
+                            <li>Autonomous Car Simulation Using Machine Learning in CARLA</li>
+                            <li>Fire and Smoke Detection Using ESP32-CAM and TinyML</li>
+                            <li>Vision-Based Target Seeking Robot with LiDAR-Based Obstacle Avoidance in Simulation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">February 2022 - June 2024</div>
+                    <div class="timeline-content">
+                        <h3>Young Professional-II</h3>
+                        <h4>ICAR-CIPHET, Ludhiana</h4>
+                        <p>Project: "Network Programme on Precision Agriculture" funded by ICAR</p>
+                        <ul class="timeline-details">
+                            <li>Designed and developed 3D food printer based on SCARA robot using Arduino CNC Shield</li>
+                            <li>Designed and integrated communication program with ABB robotic arm (IRB1200) for hand-eye coordination</li>
+                            <li>Designed PCBs for sensor devices, focusing on reliability and scalability for deployment in complex monitoring systems</li>
+                            <li>Designed and developed WSN based system for real-time monitoring and tracking of food commodities during transportation</li>
+                            <li>Developed efficient code for communication between sensor device for transferring sensed data</li>
+                            <li>Designed circuit schematic diagram for sensor devices</li>
+                            <li>Programmed a PLC to automate the mango sorting machine, integrating with the developed machine vision system</li>
+                            <li>Developed and deployed PLC program to automate a tomato sorting machine</li>
+                            <li>Developed surface defect identification and size based grading system for mango fruit using machine vision</li>
+                            <li>Conceptualized and designed 3D prototype for advanced sorting system for mango fruit</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">December 2020 - December 2021</div>
+                    <div class="timeline-content">
+                        <h3>Automation Engineer</h3>
+                        <h4>K-Spark Automation</h4>
+                        <ul class="timeline-details">
+                            <li>Programming for Special Purpose Machines (SPM)</li>
+                            <li>Worked on Servo Motors, PLC, Load cell, Pneumatics, Sensors, and Robot Controllers</li>
+                            <li>Designed Control Panel Schematics</li>
+                            <li>Developed SCADA system</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            
+            <div class="education-item">
+                <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="education-details">
+                    <h3>GATE-ELECTRICAL ENGINEERING</h3>
+                    <p class="education-year">2024 & 2025</p>
+                    <p>Qualified</p>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="education-icon"><i class="fas fa-university"></i></div>
+                <div class="education-details">
+                    <h3>Bachelors in Technology, Electrical Engineering</h3>
+                    <p class="education-year">2017-2020</p>
+                    <p class="education-institution">Guru Nanak Dev Engineering College, Ludhiana</p>
+                    <p><strong>Major Project:</strong> Arduino-based pick & place robotic arm using servo motors</p>
+                    <p><strong>Minor Project:</strong> 8051 Based Password Door Lock</p>
+                    <p><strong>CGPA:</strong> 7.48/10.00</p>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="education-icon"><i class="fas fa-school"></i></div>
+                <div class="education-details">
+                    <h3>Diploma, Electrical Engineering</h3>
+                    <p class="education-year">2014-2017</p>
+                    <p class="education-institution">GOVT. POLYTECHNIC COLLEGE AMRITSAR (PSBTE & IT)</p>
+                    <p><strong>Major Project:</strong> Quadcopter drone</p>
+                    <p><strong>Minor Project:</strong> Electromagnetic train concept model</p>
+                    <p><strong>Percentage:</strong> 69/100</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications" class="publications">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+            
+            <div class="publication-category">
+                <h3>Journal</h3>
+                <div class="publication-item">
+                    <p>Monitoring Mango Surface Variations Using Non-Destructive Thermal Imaging. Plant Archive [NAAS Rating: 5.59] [Accepted]</p>
+                </div>
+                <div class="publication-item">
+                    <p>Kaukab, S., Komal, Kumar, S., Ray, H., Brar, J. S., Ghodki, B. M., Kalnar, Y. B., Ghosh, A., & Narsaiah, K. (2024). Machine learning based approach for detection and size estimation for on-field harvesting and sorting of apple. SN Computer Science. [IF: 3.78] [Accepted]</p>
+                </div>
+            </div>
+
+            <div class="publication-category">
+                <h3>Book Chapter</h3>
+                <div class="publication-item">
+                    <p>Komal, Sumit. (2023). Harnessing social media for teaching and learning purposes. In Sheoran, P., Bhadauria, P., Bhadauria, S. S., & Shah, R. A.(Eds), Multidisciplinary Portrait of Agriculture (pp. 39-47). ISBN 978-93-91995-10-2</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="training" class="training">
+        <div class="container">
+            <h2 class="section-title">Seminars, Training & Workshops</h2>
+            
+            <div class="training-item">
+                <div class="training-date">January 25, 2024 – January 29, 2024</div>
+                <div class="training-content">
+                    <h3>One Week Short Term Course</h3>
+                    <p><strong>Title:</strong> Optimization and Control Design Techniques Innovations and Challenges, OCDT-2024</p>
+                    <p><strong>Organized by:</strong> National Institute of Technology, Jalandhar</p>
+                </div>
+            </div>
+
+            <div class="training-item">
+                <div class="training-date">January 08, 2024 – January 17, 2024</div>
+                <div class="training-content">
+                    <h3>10 Days Online Training Programme</h3>
+                    <p><strong>Title:</strong> Image Processing for Analysis of Agri-Food Commodities using MATLAB</p>
+                    <p><strong>Organized by:</strong> ICAR-CIPHET, Ludhiana</p>
+                </div>
+            </div>
+
+            <div class="training-item">
+                <div class="training-date">February 2020</div>
+                <div class="training-content">
+                    <h3>Major Six Months Training during UG</h3>
+                    <p>In PLC; Drive; HMI; SCADA; Switch Gear & Pneumatic</p>
+                    <p><strong>Institute:</strong> Industrial Automation Training Centre Siemens</p>
+                </div>
+            </div>
+
+            <div class="training-item">
+                <div class="training-date">June 2018</div>
+                <div class="training-content">
+                    <h3>Minor Six Weeks Training during UG</h3>
+                    <p>In Synchronising generators; Power Distribution at Different Voltage levels; synchronous generators & Governor</p>
+                    <p><strong>Institute:</strong> 6MW Hydro Power Plant (HP)</p>
+                </div>
+            </div>
+
+            <div class="training-item">
+                <div class="training-date">During UG</div>
+                <div class="training-content">
+                    <h3>Minor Six Weeks Training during UG</h3>
+                    <p>In Switch Gear protection & Relay Protection; area power control</p>
+                    <p><strong>Institute:</strong> 132/11KV Sub-Station</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="extra-activities" class="extra-activities">
+        <div class="container">
+            <h2 class="section-title">Extra Activities</h2>
+            
+            <div class="activity-item">
+                <div class="activity-date">October 27, 2023 - October 29, 2023</div>
+                <div class="activity-content">
+                    <h3>Project demonstrated in "India Mobile Congress (IMC) 2023" at Pragati Maidan, New Delhi</h3>
+                    <p><strong>Exhibition Title:</strong> Technology Demonstration under Project NePPA</p>
+                    <p><strong>Organized by:</strong> Government of India (GoI)</p>
+                </div>
+            </div>
+
+            <div class="activity-item">
+                <div class="activity-date">October 03, 2023 - October 05, 2023</div>
+                <div class="activity-content">
+                    <h3>Project demonstrated at "ICAR-CIPHET Industry Interface Fair on Agro-Processing (CIPHET-IIFA-2023) & Kisan Mela</h3>
+                    <p><strong>Exhibition Title:</strong> Technology Demonstration under Project NePPA</p>
+                    <p><strong>Organized by:</strong> ICAR-CIPHET, Ludhiana</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Key Skills</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming & Software</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MATLAB</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Visual Studio</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Arduino IDE</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Industrial Automation</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PLC Programming</span>
+                        <span class="skill-tag">HMI</span>
+                        <span class="skill-tag">AC & DC Drive Commissioning</span>
+                        <span class="skill-tag">SCADA</span>
+                        <span class="skill-tag">TIA Portal</span>
+                        <span class="skill-tag">SINAMICS starter</span>
+                        <span class="skill-tag">WinCC</span>
+                        <span class="skill-tag">WinProLadder</span>
+                        <span class="skill-tag">WPLsoft</span>
+                        <span class="skill-tag">DOPsoft</span>
+                        <span class="skill-tag">RSlogix5000</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Design & Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Schematic designing</span>
+                        <span class="skill-tag">3D modelling</span>
+                        <span class="skill-tag">PCB Designing</span>
+                        <span class="skill-tag">Soldering</span>
+                        <span class="skill-tag">Creo PTC</span>
+                        <span class="skill-tag">AutoCAD Electrical</span>
+                        <span class="skill-tag">Altium Designer</span>
+                        <span class="skill-tag">Proteus</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>AI & Robotics</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Machine Vision</span>
+                        <span class="skill-tag">Micro-controllers</span>
+                        <span class="skill-tag">Image Processing</span>
+                        <span class="skill-tag">Object Detection</span>
+                        <span class="skill-tag">Robotics</span>
+                        <span class="skill-tag">Hand-Eye-Calibration</span>
+                        <span class="skill-tag">Robot Operating System</span>
+                        <span class="skill-tag">Robot Simulation</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>IoT & Networking</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Wireless Sensor Networks</span>
+                        <span class="skill-tag">Internet of Things</span>
+                        <span class="skill-tag">Platform IO</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info-large">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:sumitrastic@gmail.com">sumitrastic@gmail.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p><a href="tel:7837374687">7837374687</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>Chintpurni Distt. Una, H.P 177110</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Sumit Kumar. All Rights Reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-</html>
+</html> 
